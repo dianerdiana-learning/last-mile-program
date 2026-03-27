@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handling Demo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Event handling Demo</h2>
+
+      <div class="control-group" id="mouse-zone">
+        <label>Mouseover/Out Zone</label>
+        <button id="click-btn">Click Me!</button>
+      </div>
+
+      <div class="control-group">
+        <label for="text-input">Typing (Input/Keyup):</label>
+        <input type="text" id="text-input" placeholder="Type something..." />
+      </div>
+
+      <div class="control-group">
+        <label for="select-menu">Change Event:</label>
+        <select id="select-menu">
+          <option value="Option 1">Option 1</option>
+          <option value="Option 2">Option 2</option>
+        </select>
+      </div>
+
+      <form id="demo-form" class="control-group">
+        <label>Form Submit:</label>
+        <input
+          type="text"
+          id="form-data"
+          placeholder="Enter secret code"
+          required
+        />
+        <button type="submit">Submit Form</button>
+      </form>
+
+      <div id="output-area">
+        <em>Event logs will appear here...</em>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
