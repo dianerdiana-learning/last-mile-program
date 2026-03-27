@@ -7,30 +7,98 @@
     <title>Document</title>
   </head>
   <body>
-    <main>
-      <div class="base_container">
-        <p class="container_label">Base Container</p>
-      </div>
+    <div id="root">
+      <header class="container">
+        <nav>
+          <ul class="nav">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-      <div class="base_container flex_container">
-        <p class="container_label">Flex Container</p>
+      <main class="container">
+        <h1>Dian Erdiana</h1>
+        <article>
+          <h2 id="about">About</h2>
+          <hr />
+          <p>
+            I'am a Fullstack Developer
 
-        <div class="flex_container_item">
-          <p>Item</p>
-        </div>
+            <br />
+            Let's connect with me
+          </p>
 
-        <div class="flex_container_item">
-          <p>Item</p>
-        </div>
+          <section>
+            <h3>Education</h3>
+            <ol>
+              <li>Information Systems - Universitas Siber Muhammadiyah</li>
+              <li>Mechanical Engineering - SMKN 1 Majalengka</li>
+            </ol>
+          </section>
 
-        <div class="flex_container_item">
-          <p>Item</p>
-        </div>
+          <section>
+            <h3>Work Experience</h3>
+            <ol>
+              <li>
+                <a href="https://www.talentaindonesia.id" target="_blank">
+                  2023 - now: PT Talenta Indonesia Raya
+                </a>
+              </li>
+              <li>
+                <a href="https://www.jujura.id" target="_blank">
+                  2022 - 2023: PT Ayo Menebar Kebaikan
+                </a>
+              </li>
+              <li>
+                <a href="https://www.jp-abukuma.com" target="_blank">
+                  2017 - 2020: Abukuma Co.,Ltd
+                </a>
+              </li>
+            </ol>
+          </section>
 
-        <div class="flex_container_item">
-          <p>Item</p>
-        </div>
-      </div>
-    </main>
+          <section>
+            <h3 id="contact">Contact</h3>
+            <form action="#" style="padding-bottom: 32px">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" />
+              </div>
+
+              <div class="form-group">
+                <label for="question">Question</label>
+                <textarea
+                  name="question"
+                  id="question"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+
+              <div style="display: flex; justify-content: end">
+                <button type="submit" class="btn-submit">Send</button>
+              </div>
+            </form>
+          </section>
+        </article>
+      </main>
+
+      <footer class="container">
+        <p>2026 - Dian Erdiana</p>
+      </footer>
+    </div>
   </body>
 </html>
