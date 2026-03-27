@@ -1,0 +1,39 @@
+.container_label {
+  text-align: center;
+  font-size: large;
+  width: 100%;
+}
+
+.container_item {
+  text-align: center;
+  font-size: medium;
+}
+
+.base_container {
+  margin: 0 auto;
+  padding: 0 24px;
+  border: 1px solid black;
+  width: 644px;
+  height: 60px;
+}
+
+.flex_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: baseline;
+  flex-wrap: wrap;
+  height: fit-content;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  column-gap: 12px;
+}
+
+.flex_container_item {
+  width: 32px;
+  height: 32px;
+  background-color: aquamarine;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Dian Erdiana</h1>
+      <article>
+        <h2 id="about">About</h2>
+        <hr />
+        <p>
+          I'am a Fullstack Developer
+
+          <br />
+          Let's connect with me
+        </p>
+
+        <section>
+          <h3>Education</h3>
+          <ol>
+            <li>
+              Bachelor Information Systems - Universitas Siber Muhammadiyah
+            </li>
+            <li>Mechanical Engineering - SMKN 1 Majalengka</li>
+          </ol>
+        </section>
+
+        <section>
+          <h3>Work Experience</h3>
+          <ol>
+            <li>
+              <a href="https://www.talentaindonesia.id" target="_blank">
+                2023 - now: PT Talenta Indonesia Raya
+              </a>
+            </li>
+            <li>
+              <a href="https://www.jujura.id" target="_blank">
+                2022 - 2023: PT Ayo Menebar Kebaikan
+              </a>
+            </li>
+            <li>
+              <a href="https://www.jp-abukuma.com" target="_blank">
+                2017 - 2020: Abukuma Co.,Ltd
+              </a>
+            </li>
+          </ol>
+        </section>
+
+        <section>
+          <h3 id="contact">Contact</h3>
+          <form action="#">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" />
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" />
+            </div>
+
+            <div>
+              <p style="margin: 0">Ask Me About:</p>
+              <div>
+                <input
+                  id="experience"
+                  type="radio"
+                  name="ask-me"
+                  value="experience"
+                />
+                <label for="experience" id="experience">Experience</label>
+              </div>
+              <div>
+                <input
+                  id="education"
+                  type="radio"
+                  name="ask-me"
+                  value="education"
+                />
+                <label for="education" id="education">Education</label>
+              </div>
+              <div>
+                <input
+                  id="others"
+                  type="radio"
+                  name="ask-me"
+                  value="others"
+                  checked
+                />
+                <label for="others" id="others">Other</label>
+              </div>
+            </div>
+
+            <div>
+              <label for="urgent">Is Urgent</label>
+              <input type="checkbox" name="urgent" id="urgent" />
+            </div>
+
+            <div>
+              <label for="password">Password</label>
+              <input type="text" id="password" name="password" />
+            </div>
+
+            <div style="display: flex; align-items: center">
+              <label for="question">Question</label>
+              <textarea
+                name="question"
+                id="question"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+
+            <button type="submit">Send</button>
+          </form>
+        </section>
+      </article>
+    </main>
+
+    <footer>
+      <p>Majalengka - Dian Erdiana - 2026</p>
+    </footer>
+  </body>
+</html>
