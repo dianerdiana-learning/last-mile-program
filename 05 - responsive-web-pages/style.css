@@ -1,0 +1,38 @@
+/* Step 4.1: Basic Styling */
+.container {
+  display: flex;
+  flex-direction: row; /* Side-by-side on desktop */
+  gap: 10px;
+  padding: 20px;
+}
+
+.box-one,
+.box-two {
+  flex: 1;
+  padding: 40px;
+  text-align: center;
+
+  /* Content styling */
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.box-one {
+  background-color: #ffcc00; /* Yellow */
+}
+
+.box-two {
+  background-color: #00ccff; /* Blue */
+}
+
+/* Step 5.1 & 5.2: Media Queries for Mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stacked vertically on small screens */
+  }
+
+  .box-one,
+  .box-two {
+    font-size: 18px; /* Slightly smaller text for mobile */
+  }
+}
