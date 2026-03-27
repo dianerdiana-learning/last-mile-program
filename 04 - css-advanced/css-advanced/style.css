@@ -1,0 +1,52 @@
+/* Step 4: Mobile-First Styling */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header,
+nav,
+footer {
+  padding: 1rem;
+  text-align: center;
+  background: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Step 6.1: Grid Container Setup (Mobile Default) */
+.grid-container {
+  display: grid;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  grid-template-columns: 1fr; /* Single column for mobile */
+}
+
+.card {
+  background: #3498db;
+  color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Step 5 & 6.2: Media Queries & Responsive Grid */
+
+/* Tablet (min-width: 768px) */
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  }
+  body {
+    font-size: 1.1rem;
+  }
+}
+
+/* Desktop (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
