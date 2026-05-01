@@ -1,0 +1,13 @@
+{
+  "name": "mongodb-crud",
+  "version": "1.0.0",
+  "description": "MongoDB CRUD Practice – Last Mile Program",
+  "main": "src/crud.js",
+  "scripts": {
+    "start": "node src/crud.js",
+    "seed": "node src/seed.js"
+  },
+  "dependencies": {
+    "mongodb": "^6.9.0"
+  }
+}
