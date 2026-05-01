@@ -1,8 +1,6 @@
 const mongoose = require('mongoose');
 
-const MONGODB_URI =
-  process.env.MONGODB_URI ||
-  'mongodb+srv://dianerdiana:dianerdiana@myatlasclusteredu.zedg4gr.mongodb.net/';
+const MONGODB_URI = process.env.MONGODB_URI || '';
 
 const salesSchema = new mongoose.Schema(
   {
