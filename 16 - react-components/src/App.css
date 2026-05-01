@@ -1,0 +1,138 @@
+/* ──────────────────────────────────────────────────────────────────────────────
+ * Step 6.1 – Component-level styles
+ * Each section is labelled with the component it styles so the hierarchy
+ * is visually obvious in both the code and the browser.
+ * ──────────────────────────────────────────────────────────────────────────── */
+
+/* ── App wrapper ─────────────────────────────────────────────────────────────── */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ── Header (child 1 of App) ─────────────────────────────────────────────────── */
+.header {
+  background-color: #1e3a5f;
+  color: #fff;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.4rem;
+}
+
+.header p {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/* ── MainContainer (child 2 of App) ──────────────────────────────────────────── */
+.main-container {
+  flex: 1;
+  padding: 2rem 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #1e3a5f;
+  border-bottom: 2px solid #1e3a5f;
+  padding-bottom: 0.5rem;
+}
+
+/* ── ProductCard (grandchild: child of MainContainer) ───────────────────────── */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.25rem;
+}
+
+.product-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.badge {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background-color: #e85d04;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.product-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1e3a5f;
+  margin-top: 0.5rem;
+}
+
+.product-category {
+  font-size: 0.8rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #333;
+  margin-top: auto;
+}
+
+.btn-add {
+  margin-top: 0.75rem;
+  padding: 0.5rem 0;
+  background-color: #1e3a5f;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: background-color 0.15s ease;
+}
+
+.btn-add:hover {
+  background-color: #163050;
+}
+
+/* ── Footer (child 3 of App) ─────────────────────────────────────────────────── */
+.footer {
+  background-color: #1e3a5f;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  padding: 1.25rem;
+  font-size: 0.875rem;
+}
+
+.footer strong {
+  color: #fff;
+}
